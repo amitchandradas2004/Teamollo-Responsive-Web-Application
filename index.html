@@ -989,18 +989,18 @@
       </section>
 
       <!-- I train thousands of  Students everyday in YouTube Section -->
-      <section class="bg-white pt-24 pb-32 relative">
+      <section class="bg-white pt-24 pb-32 relative mx-2">
         <!-- Floating Card -->
         <div
           class="absolute left-1/2 -bottom-20 transform -translate-x-1/2 bg-gray-100 rounded-3xl shadow-lg text-center px-16 py-12 max-w-3xl w-full"
         >
-          <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold text-black">
+          <h2 class="text-2xl md:text-4xl lg:text-5xl font-semibold text-black">
             I train thousands of Students <br />
             everyday in YouTube
           </h2>
 
           <button
-            class="mt-6 btn bg-[#B5ED3D] text-black font-bold w-50 h-12 rounded-full"
+            class="mt-6 btn bg-[#B5ED3D] text-black font-bold w-40 md:w-50 h-12 rounded-full"
           >
             Subscribe Now
           </button>
@@ -1020,18 +1020,37 @@
     </main>
 
     <footer>
-      <div class="flex justify-between container mx-auto items-center gap-5">
+      <div
+        class="flex flex-col md:flex-row justify-between container mx-auto items-center gap-5"
+      >
         <div class="space-y-5">
           <h2
-            class="text-[60px] md:text-[100px] lg:text-[150px] tracking-[-2.5px] leading-[70px] md:leading-[100px] lg:leading-[170px] font-medium"
+            class="text-[60px] md:text-[100px] lg:text-[150px] tracking-[-2.5px] leading-[70px] md:leading-[100px] lg:leading-[170px] font-medium text-center md:text-start"
           >
             Want to Start a Project?
           </h2>
 
           <div>
+            <div class="text-center">
+              <button
+                type="button"
+                class="inline-block md:hidden flex items-center justify-center rounded-[5000px] bg-white btn"
+              >
+                Let`s Talk
+                <span
+                  class="rounded-[50%] bg-[#B5ED3D] p-1 w-8 h-8 items-center"
+                >
+                  <i
+                    class="fa-solid fa-arrow-down-long fa-beat"
+                    style="color: rgb(0, 0, 0)"
+                  ></i
+                ></span>
+              </button>
+            </div>
+
             <button
               type="button"
-              class="flex items-center justify-center rounded-[5000px] bg-white btn"
+              class="hidden md:inline-block flex items-center justify-center rounded-[5000px] bg-white btn"
             >
               Let`s Talk
               <span class="rounded-[50%] bg-[#B5ED3D] p-1 w-8 h-8 items-center">
@@ -1043,7 +1062,9 @@
             </button>
           </div>
         </div>
-        <div class="font-medium">
+        <div
+          class="font-medium flex md:inline-block gap-2 flex-wrap justify-center px-2 text-xl md:text-2xl"
+        >
           <p>Instagram</p>
           <p>Behance</p>
           <p>Dribbble</p>
